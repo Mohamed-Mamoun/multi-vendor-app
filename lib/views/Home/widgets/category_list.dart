@@ -60,7 +60,7 @@ class CategoryList extends StatelessWidget {
                       ),
                       ReusableText(
                         text: category['title'],
-                        fontSize: 13,
+                        fontSize: 12,
                       )
                     ],
                   ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:multi_vendor/common/background_container.dart';
 import 'package:multi_vendor/common/reusable_text.dart';
 import 'package:multi_vendor/constants/constants.dart';
 
@@ -8,16 +9,17 @@ class Recommendations extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: kOffWhite,
-        elevation: 0.3,
-        title: ReusableText(
-          text: 'Recommendations',
-          color: kGray,
-          fontSize: 13,
+        backgroundColor: kSecondary,
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: kSecondary,
+          elevation: 0.3,
+          title: ReusableText(
+            text: 'Recommendations',
+            color: Colors.white,
+            fontSize: 13,
+          ),
         ),
-      ),
-    );
+        body: BackgroundContainer(child: Container()));
   }
 }

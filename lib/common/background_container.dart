@@ -12,11 +12,15 @@ class BackgroundContainer extends StatelessWidget {
       height: hieght,
       width: width,
       decoration: BoxDecoration(
+          color: Colors.white,
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20.r), topRight: Radius.circular(20.r)),
           image: const DecorationImage(
-              opacity: .5,
-              image: AssetImage('assets/images/restaurant_bk.png'))),
+              opacity: .7,
+              fit: BoxFit.cover,
+              image: AssetImage(
+                'assets/images/restaurant_bk.png',
+              ))),
       child: child,
     );
   }

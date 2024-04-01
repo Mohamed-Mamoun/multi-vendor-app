@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 // ignore: must_be_immutable
 class ReusableText extends StatelessWidget {
@@ -15,13 +17,11 @@ class ReusableText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(
-          fontSize: fontSize ?? 15.0,
+    return Text(text,
+        style: GoogleFonts.poppins(
           color: color ?? Colors.black,
-          fontFamily: 'primary',
-          fontWeight: fontWeight ?? FontWeight.normal),
-    );
+          fontWeight: fontWeight ?? FontWeight.normal,
+          fontSize: fontSize?.sp ?? 15.0,
+        ));
   }
 }
